@@ -1,11 +1,11 @@
 import React from "react";
 import Login from "../Components/Login/Login";
-function Login(props) {
+function loginPage({ onSuccess }) {
   return (
     <div>
-      <Login />
+      <Login onSuccess={onSuccess} />
     </div>
   );
 }
 
-export default Login;
+export default loginPage;

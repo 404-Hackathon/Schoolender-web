@@ -1,9 +1,9 @@
 import React from "react";
 import Signup from "../Components/signUp/signup";
-function SignupPage(props) {
+function SignupPage({ onSuccess }) {
   return (
     <div>
-      <Signup />
+      <Signup onSuccess={onSuccess} />
     </div>
   );
 }
