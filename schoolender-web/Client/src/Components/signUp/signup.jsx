@@ -13,11 +13,15 @@ const Signup = ({ onSuccess }) => {
   let [name, setName] = React.useState("");
   let [email, setEmail] = React.useState("");
   let [password, setPassword] = React.useState("");
-  const handleSubmit = async () => {
-    const user = await firebase
-      .auth()
-      .createUserWithEmailAndPassword(email, password);
-    onSuccess(user);
+  const handleSubmit = async (event) => {
+    try {
+      const user = await firebase
+        .auth()
+        .createUserWithEmailAndPassword(email, password);
+      onSuccess(user);
+    } catch (error) {
+      console.log(error);
+    }
 
     return;
   };
@@ -47,10 +51,10 @@ const Signup = ({ onSuccess }) => {
           value={password}
           onChange={(e) => setPassword(e.target.value)}
         />
-        <div onClick={handleSubmit} className="login-btn">
+        <div onClick={handleSubmit()} className="login-btn">
           Signup
         </div>
-        <NavLink exact to="/calender">
+        <NavLink exact to="/login">
           <h6>already have an account?</h6>
         </NavLink>
       </div>

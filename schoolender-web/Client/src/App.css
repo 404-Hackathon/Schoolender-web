@@ -1,16 +1,16 @@
 .App {
   background-image: linear-gradient(
     to bottom right,
-    rgb(250, 170, 124),
-    rgb(255, 209, 230)
+    rgb(253, 217, 196),
+    rgb(255, 251, 253)
   );
   min-height: 100vh;
 }
 body {
   background-image: linear-gradient(
     to bottom right,
-    rgb(250, 170, 124),
-    rgb(255, 213, 232)
+    rgb(253, 223, 205),
+    rgb(255, 251, 253)
   );
 }
 header {

@@ -38,7 +38,7 @@ function Login({ onSuccess }) {
           <div onClick={handleSubmit} className="login-btn">
             Login
           </div>
-          <NavLink exact to="/">
+          <NavLink exact to="/signup">
             <h6>Don't have an account?</h6>
           </NavLink>
         </div>

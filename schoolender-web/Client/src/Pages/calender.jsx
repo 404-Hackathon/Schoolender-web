@@ -1,11 +1,11 @@
 import React from "react";
-
-function Calender(props) {
+import Calender from "../Components/Calender/calender";
+function CalenderPage({ user }) {
   return (
     <div>
-      <h1>hello there</h1>
+      <Calender user={user} />
     </div>
   );
 }
 
-export default Calender;
+export default CalenderPage;
